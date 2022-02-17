@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+div {
+  border: 1px solid white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 10vh;
+}
+
+.site-title {
+  background-color: yellow;
+  flex: 1; /* flex-grow, flex-shrink, flex-basis (shrink and basis are optional) */
+}
+
+.navs {
+  flex: 1;
+  display: flex;
+}
+
+.nav1,
+.nav2,
+.nav3 {
+  background-color: pink;
+  border: 1px solid white;
+  flex: 1;
+}
+
+/* Main  */
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 70vh;
+}
+
+.main-wrap {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.post-title {
+  background-color: rgb(82, 128, 112);
+  min-height: 10vh;
+}
+
+/* meta-content-image */
+.meta-content-image {
+  display: flex;
+  min-height: 70vh;
+}
+
+.post-meta {
+  background-color: rgb(144, 224, 144);
+  flex: 1;
+  height: 70vh;
+}
+
+.content-image-wrap {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 2;
+}
+
+.content-image {
+  flex: 2;
+}
+
+.main-content-image {
+  background-color: yellow;
+  flex: 3;
+}
+
+.main-content {
+  background-color: grey;
+  flex: 1;
+}
+
+/* Side bar */
+
+aside {
+  display: flex;
+  flex-flow: column wrap;
+  min-width: 30vw;
+}
+
+aside > * {
+  flex: 1;
+}
+
+.side-bar {
+  background-color: orange;
+}
+
+.ads {
+  background-color: green;
+}
+
+.other-stuff {
+  background-color: plum;
+}
+/* Footer  */
+footer {
+  background-color: rgb(161, 40, 40);
+  flex: 1 100%;
+  min-height: 10vh;
+}
